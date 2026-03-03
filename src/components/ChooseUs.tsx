@@ -28,11 +28,11 @@ const ChooseUs = () => {
                 y: 0,
                 autoAlpha: 1,
                 duration: 0.5,
-                ease: "power2.easeOut",
+                ease: "power2.inOut",
                 stagger: 0.1,
                 scrollTrigger: {
                     trigger: container,
-                    start: "top 60%",
+                    start: "top 80%",
                     toggleActions: "play none none reverse",
                 },
             }
@@ -42,7 +42,7 @@ const ChooseUs = () => {
         }, {
             y: 0,
             duration: 1,
-            ease: "power2.easeOut",
+            ease: "power2.inOut",
             scrollTrigger: {
                 trigger: ".head",
                 start: "top 90%",

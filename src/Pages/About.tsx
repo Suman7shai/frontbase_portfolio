@@ -3,6 +3,7 @@ import Navigation from "../components/Navigation"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Footer from "../components/Footer"
+import img from "/image/Employees-at-work.avif"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -32,7 +33,7 @@ const team = [
     name: "Anil Gurung",
     title: "Mobile App Developer",
     bio: "iOS/Android expert delivering seamless cross-platform mobile solutions.",
-    img: "https://images.unsplash.com/photo-1545996124-3a6a3e8f1f9b?w=300&h=300&fit=crop",
+    img: "https://images.unsplash.com/photo-1546456073-6712f79251bb?w=300&h=300&fit=crop",
     links: { linkedin: "#" },
   },
   {
@@ -147,8 +148,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className="hidden md:block">
-            <div className="w-full h-56 bg-white/5 rounded-lg" style={{ backgroundImage: 'linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)' }} />
+          <div className="h-70 w-full rounded-lg overflow-hidden ">
+            <img src={img} alt="work" />
           </div>
         </div>
       </section>
