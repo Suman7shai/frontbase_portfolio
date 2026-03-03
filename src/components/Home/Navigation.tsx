@@ -42,7 +42,6 @@ const Navigation = () => {
           <Link to="/" className=" hover:text-[#69c8ff]" >Home</Link>
           <Link to="/about" className=" hover:text-[#69c8ff]" >About</Link>
           <Link to="/services" className=" hover:text-[#69c8ff]" >Services</Link>
-          <Link to="/work" className=" hover:text-[#69c8ff]" >Work</Link>
           <Link to="/contact" className=" hover:text-[#69c8ff]" >Contact</Link>
         </div>
 
