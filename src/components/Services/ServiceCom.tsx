@@ -7,7 +7,7 @@ import { GiBurningEye } from "react-icons/gi"
 import { HiOutlineDocumentMagnifyingGlass } from "react-icons/hi2"
 import { IoMdFiling } from "react-icons/io"
 import { SiCustomink } from "react-icons/si"
-import Navigation from "../Home/Navigation"
+import Navigation from "../Navigation"
 
 
 

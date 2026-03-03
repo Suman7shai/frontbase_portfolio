@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import Navigation from "../components/Home/Navigation"
+import Navigation from "../components/Navigation"
 import logo from "/image/taglogo.svg"
 import gsap from "gsap";
 import Contact from "./Contact";

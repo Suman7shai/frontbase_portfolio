@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react"
-import Navigation from "../components/Home/Navigation"
+import Navigation from "../components/Navigation"
 import { gsap } from "gsap"
 import Footer from "../components/Footer"
 
