@@ -9,16 +9,12 @@ interface CartProps {
 const ServicesCart = (props: CartProps) => {
   return (
     <div className="flex flex-grid font-[font-1]">
-      <div className="h-70 w-130 m-5 flex flex-col justify-center text-black bg-white font-bold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 "> 
-        <div className="flex items-center gap-4 p-4">
-          <div className="h-10 w-10 flex justify-center items-center text-4xl text-[#69c8ff]">
-            {props.icon}
-          </div>
-          <h1 className="text-2xl m-0">{props.title}</h1>
+      <div className="h-70 w-130 m-5 flex flex-col items-center text-black bg-white font-bold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 p-6"> 
+        <div className="h-14 w-14 flex justify-center items-center text-4xl text-[#69c8ff] mb-4">
+          {props.icon}
         </div>
-        <div className="px-4 pb-4 text-xs">
-          <p className="m-0">{props.description}</p>
-        </div>
+        <h1 className="text-2xl text-center mb-2">{props.title}</h1>
+        <p className="text-xs text-center">{props.description}</p>
       </div>
     </div>
   )
