@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
+import { FaGithub, FaTwitter } from "react-icons/fa"
+import { HiOutlineMail } from "react-icons/hi"
 
 const Footer = () => {
   const root = useRef<HTMLDivElement | null>(null)
@@ -20,7 +22,7 @@ const Footer = () => {
   }
 
   return (
-    <footer ref={root} className="bg-white/90 text-black">
+    <footer ref={root} className="bg-white/90 text-black font-[font-1]">
       <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 px-6 py-8">
         <div className="ft-item">
           <div className="text-xl font-bold text-[#69c8ff]">FrontBase</div>
@@ -35,29 +37,39 @@ const Footer = () => {
         </nav>
 
         <div className="flex gap-3 items-center ft-item">
-          <button
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
             onMouseEnter={(e) => hoverIn(e.currentTarget as HTMLElement)}
             onMouseLeave={(e) => hoverOut(e.currentTarget as HTMLElement)}
-            className="px-3 py-2 rounded bg-black/3 text-sm"
+            className="px-3 py-2 rounded bg-black/3 text-sm flex items-center justify-center"
           >
-            GitHub
-          </button>
+            <FaGithub className="text-lg" />
+          </a>
 
-          <button
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
             onMouseEnter={(e) => hoverIn(e.currentTarget as HTMLElement)}
             onMouseLeave={(e) => hoverOut(e.currentTarget as HTMLElement)}
-            className="px-3 py-2 rounded bg-black/3 text-sm"
+            className="px-3 py-2 rounded bg-black/3 text-sm flex items-center justify-center"
           >
-            Twitter
-          </button>
+            <FaTwitter className="text-lg" />
+          </a>
 
-          <button
+          <a
+            href="mailto:info@frontbase.com"
+            aria-label="Email"
             onMouseEnter={(e) => hoverIn(e.currentTarget as HTMLElement)}
             onMouseLeave={(e) => hoverOut(e.currentTarget as HTMLElement)}
-            className="px-3 py-2 rounded bg-black/3 text-sm"
+            className="px-3 py-2 rounded bg-black/3 text-sm flex items-center justify-center"
           >
-            Email
-          </button>
+            <HiOutlineMail className="text-lg" />
+          </a>
         </div>
       </div>
 
