@@ -1,0 +1,16 @@
+
+@keyframes starFloat {
+	0% {
+		transform: translate3d(0, 0, 0) scale(1);
+		opacity: 0;
+	}
+	8% { opacity: 0.9 }
+	100% {
+		transform: translate3d(var(--tx, 0px), -140vh, 0) scale(1.05);
+		opacity: 0;
+	}
+}
+
+/* make sure large blurred stars don't create layout overflow */
+body, #root { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
