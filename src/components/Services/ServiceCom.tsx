@@ -16,16 +16,16 @@ const Services = () => {
         <section className="font-[font-1]">
             <div className="text-white bg-gray-950  min-h-screen w-screen font-[font-1] flex flex-col items-center ">
                 <Navigation />
-                <div className="gap-2 w-250 flex flex-col items-center py-12 mt-30 animate">
-                    <h1 className="text-7xl font-bold text-[#69c8ff] mb-5 mt-30">Our Services</h1>
-                    <p className="text-lg pt-6 leading-8 mt-3">
+                <div className="gap-2 w-full max-w-3xl px-4 flex flex-col items-center py-12 mt-16 md:mt-30 animate">
+                    <h1 className="text-4xl md:text-7xl font-bold text-[#69c8ff] mb-5 mt-8 md:mt-30">Our Services</h1>
+                    <p className="text-lg pt-6 leading-7 mt-3">
                         FrontBase is a cutting-edge web application designed to streamline and enhance your online
                         experience. Built with modern technologies, it offers a sleek interface and robust
                         functionality to meet the needs of today's users.
                     </p>
                 </div>
-                <div className="max-w-6xl mt-30 animate">
-                    <div className="grid grid-cols-1 md:grid-cols-4">
+        <div className="w-full max-w-6xl px-4 mt-12 md:mt-30 animate">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
                         <ServiceCart
                             icon={<FcFilmReel />}
                             title="Digital Marketing"
