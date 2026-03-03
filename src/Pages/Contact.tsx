@@ -46,19 +46,19 @@ const Contact = () => {
 
   return (
     <section className="w-full font-[font-1]">
-      <div className="text-white bg-gray-950 min-h-screen w-screen font-[font-1] flex flex-row">
+      <div className="text-white bg-gray-950 min-h-screen w-full font-[font-1] flex flex-col md:flex-row flex-wrap">
         <Navigation />
 
-      <div ref={containerRef} className="pl-20 flex-row gap-2 w-150 py-12">
-        <h1 className="text-7xl font-bold animate text-[#69c8ff] mb-5 mt-50">Contact</h1>
+      <div ref={containerRef} className="px-6 md:pl-20 flex flex-col gap-2 w-full md:w-150 py-12">
+        <h1 className="text-4xl md:text-7xl font-bold animate text-[#69c8ff] mb-5 mt-20 md:mt-50">Contact</h1>
         <p className="text-lg pt-6 leading-5 animate mt-5">
           FrontBase is a cutting-edge web application designed to streamline and enhance your online
           experience. Built with modern technologies, it offers a sleek interface and robust
           functionality to meet the needs of today's users.
         </p>
       </div>
-      <div className="max-w-6xl mx-auto px-6 md:px-20 py-12 mt-30 animate">
-        <form onSubmit={handleSubmit} className="mt-8 space-y-4 animate border-2 border-white bg-white text-black p-6 rounded-lg h-120 w-120">
+      <div className="w-full max-w-6xl mx-auto px-6 md:px-20 py-12 md:mt-30 animate">
+        <form onSubmit={handleSubmit} className="mt-8 space-y-4 animate border-2 border-white bg-white text-black p-6 rounded-lg w-full max-w-lg">
           <div className="flex flex-col">
             <label className="text-sm mb-2">Name</label>
             <input

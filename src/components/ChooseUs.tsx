@@ -9,8 +9,8 @@ const ChooseUs = () => {
           <h1 className="text-3xl md:text-4xl font-bold">Why Choose FrontBase?</h1>
           <p className="mt-4 text-base md:text-lg">Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results.</p>
         </div>
-        <div className="max-w-8xl mx-auto px-6 md:px-20 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 py-8">
-          <div className="home-card p-6 h-100 w-75 flex flex-col bg-gray-50 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+        <div className="max-w-6xl mx-auto px-6 md:px-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-8">
+          <div className="home-card p-6 flex flex-col bg-gray-50 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transform hover:scale-105 transition-all duration-300">
             <div className="flex items-center gap-3 text-2xl text-[#69c8ff]"><Icon /></div>
             <div className="mt-5 mb-5">
               <h1 className="text-xl font-semibold">Expertise</h1>
@@ -20,7 +20,7 @@ const ChooseUs = () => {
             </div>
           </div>
 
-          <div className="home-card p-6 h-100 w-75 flex flex-col bg-gray-50 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+          <div className="home-card p-6 flex flex-col bg-gray-50 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transform hover:scale-105 transition-all duration-300">
             <div className="flex items-center gap-3 text-2xl text-[#69c8ff]"><Icon /></div>
             <div className="mt-5 mb-5">
               <h1 className="text-xl font-semibold">Client-Centric Approach</h1>
@@ -30,7 +30,7 @@ const ChooseUs = () => {
             </div>
           </div>
 
-          <div className="home-card p-6 h-100 w-75 flex flex-col bg-gray-50 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+          <div className="home-card p-6 flex flex-col bg-gray-50 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transform hover:scale-105 transition-all duration-300">
             <div className="flex items-center gap-3 text-2xl text-[#69c8ff]"><Icon /></div>
             <div className="mt-5 mb-5">
               <h1 className="text-xl font-semibold">Results-Driven Solution</h1>
@@ -40,7 +40,7 @@ const ChooseUs = () => {
             </div>
           </div>
 
-          <div className="home-card p-6 h-100 w-75 flex flex-col bg-gray-50 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+          <div className="home-card p-6 flex flex-col bg-gray-50 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transform hover:scale-105 transition-all duration-300">
             <div className="flex items-center gap-3 text-2xl text-[#69c8ff]"><Icon /></div>
             <div className="mt-5 mb-5">
               <h1 className="text-xl font-semibold">Collaborative Partnership</h1>

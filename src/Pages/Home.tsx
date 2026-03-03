@@ -84,15 +84,15 @@ const Home = () => {
 
     <main className="bg-black min-h-screen w-full overflow-x-hidden font-[font-1]">
       {/* landing Section */}
-      <div className="relative bg-white h-screen w-full flex flex-row items-center justify-center gap-6 py-12 px-6 rounded-bl-3xl rounded-br-4xl overflow-hidden">
+      <div className="relative bg-white min-h-screen w-full flex flex-col md:flex-row items-center justify-center gap-6 py-12 px-6 rounded-bl-3xl rounded-br-4xl overflow-hidden">
         <Navigation />
-        <div className=" text-black flex flex-col  justify-center items-center text-center md:text-left gap-6 md:gap-10 max-w-5xl">
+        <div className=" text-black flex flex-col  justify-center items-center text-center md:text-left gap-6 md:gap-10 max-w-xl">
           <h1 className="head1 mt-2 text-3xl md:text-6xl font-bold leading-tight"><span className="text-5xl md:text-7xl text-[#69c8ff]">W</span>elcome to FrontBase</h1>
           <h2 className="head2 text-2xl md:text-4xl">We build your Dream.</h2>
           <p className="head3 text-base md:text-lg">FrontBase is a digital agency that helps businesses build and scale their online presence with innovative web and mobile solutions.</p>
         </div>
-        <div>
-          <img className="tag h-200 w-100 -mt-10" src={logo} alt="FrontBase Logo" />
+        <div className="hidden md:block">
+          <img className="tag md:h-200 md:w-100 -mt-10" src={logo} alt="FrontBase Logo" />
         </div>
         <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10">
           <TextAnimation />
