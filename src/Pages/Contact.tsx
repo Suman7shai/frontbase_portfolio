@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import Navigation from "../components/Navigation"
 import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Footer from "../components/Footer"
 
 const Contact = () => {
@@ -12,13 +13,50 @@ const Contact = () => {
   const [status, setStatus] = useState<null | string>(null)
 
   useEffect(() => {
-    if (!containerRef.current) return
-    const elems = containerRef.current.querySelectorAll(".animate")
-    gsap.fromTo(
-      elems,
-      { y: 20, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.08, duration: 0.6, ease: "power3.out" }
-    )
+    gsap.registerPlugin(ScrollTrigger)
+
+    const container = containerRef.current
+    if (!container) return
+
+    const elems = Array.from(container.querySelectorAll<HTMLElement>(".animate"))
+    if (elems.length) {
+      elems.forEach((el) => {
+        gsap.fromTo(
+          el,
+          { y: 20, autoAlpha: 0 },
+          {
+            y: 0,
+            autoAlpha: 1,
+            duration: 0.6,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: el,
+              start: "top 80%",
+              toggleActions: "play none none reverse",
+            },
+          }
+        )
+      })
+      gsap.fromTo(".form", {
+        x: 20,
+        autoAlpha: 0
+      }, {
+        x: 0,
+        autoAlpha: 1,
+        duration: 0.6,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".form",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      })
+    }
+
+    return () => {
+      ScrollTrigger.getAll().forEach((st) => st.kill())
+      gsap.killTweensOf(elems as any)
+    }
   }, [])
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -64,7 +102,7 @@ const Contact = () => {
           <h1 className="text-lg">Phone: +977 981456-7899</h1>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto px-6 md:px-20 py-12 mt-30 animate">
+      <div className="form max-w-6xl mx-auto px-6 md:px-20 py-12 mt-30 animate">
         <form onSubmit={handleSubmit} className="mt-8 space-y-4 animate border-2 border-white bg-white text-black p-6 rounded-lg h-120 w-120">
           <div className="flex flex-col">
             <label className="text-sm mb-2">Name</label>
