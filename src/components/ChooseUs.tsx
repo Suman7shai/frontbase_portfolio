@@ -4,7 +4,7 @@ import Icon from "./Home/icon"
 const ChooseUs = () => {
   return (
     <section>
-        <div className="w-full mt-12 md:mt-20 bg-white text-black rounded-bl-4xl rounded-br-4xl">
+        <div className="h-screen w-full mt-12 md:mt-20 bg-white text-black rounded-bl-4xl rounded-br-4xl">
         <div className="max-w-6xl mx-auto px-6 md:px-20 py-6 text-center">
           <h1 className="text-3xl md:text-4xl font-bold">Why Choose FrontBase?</h1>
           <p className="mt-4 text-base md:text-lg">Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results.</p>

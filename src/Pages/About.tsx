@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react"
-import Navigation from "../components/Home/Navigation"
+import Navigation from "../components/Navigation"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Footer from "../components/Footer"
@@ -129,15 +129,15 @@ const About = () => {
 
             <div className="mt-6 flex items-center gap-6" ref={statsRef}>
               <div className="stat-block hero-animate">
-                <div className="text-3xl font-bold stat" data-end="50">0+</div>
+                <div className="text-3xl font-bold stat" data-end="20">0+</div>
                 <div className="text-sm opacity-80">Projects Delivered</div>
               </div>
               <div className="stat-block hero-animate">
-                <div className="text-3xl font-bold stat" data-end="98">0</div>
+                <div className="text-3xl font-bold stat" data-end="50">0</div>
                 <div className="text-sm opacity-80">Client Satisfaction</div>
               </div>
               <div className="stat-block hero-animate">
-                <div className="text-3xl font-bold stat" data-end="5">0+</div>
+                <div className="text-3xl font-bold stat" data-end="3">0+</div>
                 <div className="text-sm opacity-80">Years of Excellence</div>
               </div>
             </div>

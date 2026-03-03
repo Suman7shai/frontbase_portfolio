@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react"
-import Navigation from "../components/Home/Navigation"
+import Navigation from "../components/Navigation"
 import { gsap } from "gsap"
 import Footer from "../components/Footer"
 
@@ -40,7 +40,7 @@ const Contact = () => {
     // Simulate send
     setTimeout(() => {
       setStatus("Message sent — thanks!")
-      gsap.to(containerRef.current, { opacity: 0, y: -10, duration: 0.6 })
+      gsap.to(containerRef.current, { opacity: 1, y: -10, duration: 0.6 })
     }, 700)
   }
 
@@ -50,12 +50,19 @@ const Contact = () => {
         <Navigation />
 
       <div ref={containerRef} className="pl-20 flex-row gap-2 w-150 py-12">
-        <h1 className="text-7xl font-bold animate text-[#69c8ff] mb-5 mt-50">Contact</h1>
-        <p className="text-lg pt-6 leading-5 animate mt-5">
-          FrontBase is a cutting-edge web application designed to streamline and enhance your online
-          experience. Built with modern technologies, it offers a sleek interface and robust
-          functionality to meet the needs of today's users.
+        <h1 className="text-7xl font-bold animate text-[#69c8ff] mb-5 mt-50">Get in Touch</h1>
+        <p className="text-lg pt-6 leading-10 animate mt-5 mb-5">
+          For commisions and project inquiries.
         </p>
+        <h1 className="text-3xl font-bold mt-4 leading-10">Contact Information</h1>
+        <div className="flex flex-col">
+        <a href="info@frontbase.com" className="text-[#69c8ff] hover:underline ">
+            info@frontbase.com
+          </a>
+          
+          <h1 className="text-lg">123 Business Street, City, State 12345</h1>
+          <h1 className="text-lg">Phone: +977 981456-7899</h1>
+        </div>
       </div>
       <div className="max-w-6xl mx-auto px-6 md:px-20 py-12 mt-30 animate">
         <form onSubmit={handleSubmit} className="mt-8 space-y-4 animate border-2 border-white bg-white text-black p-6 rounded-lg h-120 w-120">

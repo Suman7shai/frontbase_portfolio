@@ -1,11 +1,12 @@
 import { useGSAP } from "@gsap/react";
-import Navigation from "../components/Home/Navigation"
+import Navigation from "../components/Navigation"
 import logo from "/image/taglogo.svg"
 import gsap from "gsap";
 import Contact from "./Contact";
 import TextAnimation from "../components/TextAnimation";
 import ServiceCom from "../components/Services/ServiceCom";
 import ChooseUs from "../components/ChooseUs";
+import ContactLink from "../components/Home/ContactLink";
 
 
 const Home = () => {
@@ -85,6 +86,7 @@ const Home = () => {
     <main className="bg-black min-h-screen w-full overflow-x-hidden font-[font-1]">
       {/* landing Section */}
       <div className="relative bg-white h-screen w-full flex flex-row items-center justify-center gap-6 py-12 px-6 rounded-bl-3xl rounded-br-4xl overflow-hidden">
+        <ContactLink />
         <Navigation />
         <div className=" text-black flex flex-col  justify-center items-center text-center md:text-left gap-6 md:gap-10 max-w-5xl">
           <h1 className="head1 mt-2 text-3xl md:text-6xl font-bold leading-tight"><span className="text-5xl md:text-7xl text-[#69c8ff]">W</span>elcome to FrontBase</h1>
@@ -101,9 +103,6 @@ const Home = () => {
 
       <ServiceCom />
       <ChooseUs />
-
-      {/* Why Choose Us Section */}
-      
       <Contact />
     </main>
 
