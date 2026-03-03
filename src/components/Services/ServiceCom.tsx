@@ -7,7 +7,7 @@ import { GiBurningEye } from "react-icons/gi"
 import { HiOutlineDocumentMagnifyingGlass } from "react-icons/hi2"
 import { IoMdFiling } from "react-icons/io"
 import { SiCustomink } from "react-icons/si"
-import Navigation from "../Home/Navigation"
+import Navigation from "../Navigation"
 
 
 
@@ -16,9 +16,9 @@ const Services = () => {
         <section className="font-[font-1]">
             <div className="text-white bg-gray-950  min-h-screen w-screen font-[font-1] flex flex-col items-center ">
                 <Navigation />
-                <div className="flex-row gap-2 w-150">
-                    <h1 className="text-7xl font-bold animate text-[#69c8ff] mb-5 mt-30">Our Services</h1>
-                    <p className="text-lg pt-6 leading-5 animate mt-3">
+                <div className="gap-2 w-250 flex flex-col items-center py-12 mt-30 animate">
+                    <h1 className="text-7xl font-bold text-[#69c8ff] mb-5 mt-30">Our Services</h1>
+                    <p className="text-lg pt-6 leading-5 mt-3">
                         FrontBase is a cutting-edge web application designed to streamline and enhance your online
                         experience. Built with modern technologies, it offers a sleek interface and robust
                         functionality to meet the needs of today's users.
